@@ -100,7 +100,7 @@
 					<div class="col-md-12 heading-section ftco-animate">
 					  <h1 class="big">About</h1>
 					  <h2 class="mb-4">About Me</h2>
-					  <p>I am a backend developer with a passion for building robust and scalable applications.</p>
+					  <p>I'm a backend developer dedicated to crafting efficient, scalable applications that drive seamless user experiences.</p>
 					  <ul class="about-info mt-4 px-md-0 px-2">
 						<li class="d-flex"><span>Name:</span> <span>Ignatius</span></li>
 						<li class="d-flex"><span>Date of birth:</span> <span>September 09, 2004</span></li>
@@ -224,7 +224,7 @@
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Skills</h1>
               <h2 class="mb-4">My Skills</h2>
-              <p>Passionate about building robust web applications and continuously learning new technologies.</p>
+              <p>Dedicated to building reliable web applications and APIs while continuously enhancing my skills with new technologies.</p>
               </div>
               </div>
               <div class="row">
@@ -302,7 +302,7 @@
                           <div class="overlay"></div>
                           <div class="text text-center p-4">
                               <h3><a href="#">E-commerce API</a></h3>
-                              <span>A robust API for managing online store operations, including product listings, shopping carts, and user authentication.</span>
+                              <span>A versatile API that simplifies online store operations, including product listings, searching and user authentication.</span>
                           </div>
                       </div>
                   </div>
@@ -407,33 +407,189 @@
           </div>
         </div>
 
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form method="POST" action="{% url 'contact' %}" class="bg-light p-4 p-md-5 contact-form">
-              {% csrf_token %}
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-              </div>
-              <div class="form-group">
-                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-            </div>
-          </div>
-        
 
-          <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(static/portfolio/images/about.png);"></div>
-          </div>
+
+
+<style>
+  /* Global styling */
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .inner {
+    padding: 80px 20px;
+  }
+
+  #container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container section {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 960px;
+    margin: 30px 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    box-shadow: 0 2px 5px 0 #454545;
+  }
+
+  #container section article {
+    width: 45%;
+    background-color: #f5d400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container section article h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  #container section article p {
+    font-size: 20px;
+    color: #000;
+    margin-top: 10px;
+  }
+
+  #container section article a.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: #000 solid 2px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #000;
+    transition: 0.2s all ease;
+  }
+
+  #container section article a.btn:hover {
+    background-color: #000;
+    color: #f5d400;
+  }
+
+  #container section aside {
+    width: 55%;
+  }
+
+  #container section aside h2 {
+    font-size: 40px;
+    color: #282828;
+    font-weight: 700;
+  }
+
+  #container section aside p {
+    font-size: 20px;
+    color: #282828;
+  }
+
+  form {
+    width: 90%;
+    max-width: 350px;
+    margin: 30px auto 0 auto;
+  }
+
+  form input[type=text],
+  form input[type=email],
+  form input[type=subject],
+  form textarea {
+    width: calc(100% - 55px);
+    border: none;
+    padding: 10px 15px 8px 40px;
+    margin: 8px 0;
+    font-size: 18px;
+    border-radius: 20px;
+    background-position: 4% 50%;
+    background-repeat: no-repeat;
+    background-size: 18px;
+  }
+
+  form textarea {
+    height: 120px;
+    resize: none;
+  }
+
+  form button[type=submit] {
+    margin-top: 20px;
+    border: none;
+    background-color: #f5d400;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 25px;
+    transition: 0.2s all ease;
+    box-shadow: 0 2px 5px 0 #454545;
+  }
+
+  form button[type=submit]:hover {
+    background-color: #000;
+    color: #f5d400;
+  }
+
+  @media(max-width: 760px) {
+    #container section {
+      flex-flow: column;
+    }
+
+    #container section article,
+    #container section aside {
+      width: 100%;
+    }
+  }
+</style>
+
+<body>
+  <div id="container">
+    <section>
+      <article>
+        <div class="inner">
+          <h1>Contact Me</h1>
+          <p>We'd love to hear from you! Feel free to reach out for any inquiries.</p>
+        </div>
+      </article>
+      <aside>
+        <div class="inner">
+          <h2>Send Me a Message</h2>
+          <form action="{% url 'contact' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="subject" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+  </div>
+</body>
+
+</html>
+
         </div>
       </div>
     </section>
