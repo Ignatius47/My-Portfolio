@@ -1,5 +1,9 @@
 from django.shortcuts import render
 from .models import HomeSection, Developer, Resume, Service, Skill, Project, ContactInfo, Counter
+from .forms import ContactForm
+from django.core.mail import send_mail
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 # Function-based view to render the portfolio's index.html with all sections.
 def index(request):
@@ -43,3 +47,27 @@ def index(request):
 
     # Render the 'index.html' template with the above context.
     return render(request, 'portfolio/index.html', context)
+
+
+def contact_view(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+
+            full_massage = f"Message from {name} ({email}):\n\n{message}"
+            send_mail(
+                subject,
+                full_massage,
+
+'your_gmail_account@gmail.com',
+['ignatiusx47@gmail.com'],
+            )
+            return JsonResponse({'success': 'Your message has been sent successfully!'})
+        else:
+            return JsonResponse({'error': 'All fields are required.'}, status=400)
+    
+    return JsonResponse({'error': 'Invalid request method.'}, status=400)
