@@ -57,7 +57,7 @@
 					  <div class="text">
 						<span class="subheading">Hello!</span>
 						<h1 class="mb-4 mt-3">I'm <span>Ignatius</span></h1>
-						<h2 class="mb-4">A Backend Developer</h2>
+						<h2 class="mb-4">A Web Developer</h2>
 						<p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 					  </div>
 					</div>
@@ -93,7 +93,7 @@
 				<div class="col-md-6 col-lg-5 d-flex">
 				  <div class="img-about img d-flex align-items-stretch">
 					<div class="overlay"></div>
-					<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(static/portfolio/images/iggy.png);"></div>
+					{% comment %} <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(static/portfolio/images/iggy.png);"></div> {% endcomment %}
 				  </div>
 				</div>
 				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
@@ -101,24 +101,24 @@
 					<div class="col-md-12 heading-section ftco-animate">
 					  <h1 class="big">About</h1>
 					  <h2 class="mb-4">About Me</h2>
-					  <p>I'm a backend developer dedicated to crafting efficient, scalable applications that drive seamless user experiences.</p>
+					  <p>I'm a web developer dedicated to crafting efficient, scalable applications that drive seamless user experiences.</p>
 					  <ul class="about-info mt-4 px-md-0 px-2">
 						<li class="d-flex"><span>Name:</span> <span>Ignatius Ondieki</span></li>
 						<li class="d-flex"><span>Email:</span> <span>ignatiusx47@gmail.com</span></li>
-						<li class="d-flex"><span>Phone: </span> <span>+254-70326-3320</span></li>
-            <li class="d-flex"><span>Skills:</span> <span>Python, Django, Git, MySQL</span></li>
+						<li class="d-flex"><span>Phone: </span> <span>+254746345604</span></li>
+            <li class="d-flex"><span>Skills:</span> <span>Python, Django, Git, MySQL, React, Rest APIs, Figma</span></li>
 					  </ul>
 					</div>
 				  </div>
 				  <div class="counter-wrap ftco-animate d-flex mt-md-3">
 					<div class="text">
 					  <p class="mb-4">
-						<span class="number" >5</span>
+						<span class="number" >6</span>
 						<span>Projects completed</span>
 					  </p>
-                      <p>
+                      {% comment %} <p>
                         <a href="{% static 'portfolio/files/My Resume.pdf' %}" class="btn btn-primary py-3 px-3" download="Ignatius_CV.pdf">Download CV</a>
-                      </p>
+                      </p> {% endcomment %}
                       </div>
 				  </div>
 				</div>
@@ -134,7 +134,7 @@
 				<div class="col-md-10 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Resume</h1>
                     <h2 class="mb-4">Resume</h2>
-                    <p>I successfully completed my backend development course at ALX Africa, acquiring strong skills in Django and working on various projects.</p>
+                    <p>I successfully completed my web development course at ALX Africa, acquiring strong skills in web development and working on various projects.</p>
                     </div>
                     </div>
                     </div>
@@ -143,9 +143,9 @@
                         <div class="col-md-6">
                             <div class="resume-wrap ftco-animate">
                                 <span class="date">2024</span>
-                                <h2>Backend Developer</h2>
+                                <h2>Web Development</h2>
                                 <span class="position">ALX Africa</span>
-                                <p class="mt-4">Completed an intensive backend development course focusing on Django, Python, and web development best practices. Worked on projects that enhanced my skills in building scalable web applications.</p>
+                                <p class="mt-4">Completed an intensive web development course focusing on Django, Python, and web development best practices. Worked on projects that enhanced my skills in building scalable web applications.</p>
                             </div>
                             <!-- Add any additional relevant experiences here -->
                         </div>
@@ -153,9 +153,9 @@
                         <div class="col-md-6">
                             <div class="resume-wrap ftco-animate">
                                 <span class="date">2024-Present</span>
-                                <h2>Freelance Backend Developer</h2>
+                                <h2>Freelance Web Development</h2>
                                 <span class="position">Personal Projects</span>
-                                <p class="mt-4">Engaging in freelance projects and personal endeavors, applying my Django and Python skills in real-world scenarios, and enhancing my problem-solving abilities.</p>
+                                <p class="mt-4">Engaging in freelance projects and personal endeavors, applying my skills in real-world scenarios, and enhancing my problem-solving abilities.</p>
                             </div>
                             <!-- Add any additional relevant experiences here -->
                         </div>
@@ -165,39 +165,46 @@
     		</div>
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-                    <p>
+                    {% comment %} <p>
                         <a href="{% static 'portfolio/files/My Resume.pdf' %}" class="btn btn-primary py-3 px-3" download="Ignatius_CV.pdf">Download CV</a>
-                      </p>
+                      </p> {% endcomment %}
                 </div>
     		</div>
     	</div>
     </section>
       
 <section class="ftco-section" id="certifications">
-      <div class="container">
-          <div class="row justify-content-center pb-5">
-              <div class="col-md-10 heading-section text-center ftco-animate">
-                  <h1 class="big big-2">Certifications</h1>
-                  <h2 class="mb-4">Certifications</h2>
-                  <p>Certifications I’ve earned through my commitment to backend development and ongoing learning.</p>
-              </div>
-          </div>
-  
-          <div class="row">
-            <div class="row justify-content-center pb-5">
-                  <div class="certification-wrap ftco-animate text-center" style="display: flex; flex-direction: column; align-items: center;">
-                      <span class="date">2024</span>
-                      <h2>ALX Africa Software Engineering Program</h2>
-                      <span class="organization">ALX Africa</span>
-                      <p class="mt-4">Completed a 4-month intensive course in backend development, covering Django, Python, <br>and foundational web development principles.</p>
-                      <img src="static/portfolio/images/alx_certificate.jpg" alt="ALX Certificate" width="60%" style="margin-top: px;">
-                  </div>
-                  <!-- Add additional certifications here -->
-              </div>
+  <div class="container">
+      <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+              <h1 class="big big-2">Certifications</h1>
+              <h2 class="mb-4">Certifications</h2>
+              <p>Here are some of the programs I've completed as part of learning and building myself in software development.</p>
           </div>
       </div>
-</section>  
-  
+
+      <div class="row justify-content-center">
+
+          <!-- Backend Certificate -->
+          <div class="certification-wrap ftco-animate text-center" style="margin-bottom: 80px; display: flex; flex-direction: column; align-items: center;">
+              <span class="date">2024</span>
+              <h2>ALX Backend Software Engineering Program</h2>
+              <span class="organization">ALX Africa</span>
+              <p class="mt-4">Completed a 4-month program focused on backend development using Python, Django, APIs, and database systems.</p>
+              <img src="static/portfolio/images/alx_certificate.jpg" alt="Backend Certificate" width="60%">
+          </div>
+
+          <!-- Frontend Certificate -->
+          <div class="certification-wrap ftco-animate text-center" style="margin-bottom: 40px; display: flex; flex-direction: column; align-items: center;">
+              <span class="date">2025</span>
+              <h2>ALX Front-End Web Development Program</h2>
+              <span class="organization">ALX Africa</span>
+              <p class="mt-4">Completed a 4-month program in front-end development, working with HTML, CSS, JavaScript, React, and Figma for interface design and layout.</p>
+              <img src="static/portfolio/images/front_end_certificate.png" alt="Front End Certificate" width="60%">
+          </div>
+      </div>
+  </div>
+</section> 
 
     <section class="ftco-section" id="services">
     	<div class="container">
@@ -244,7 +251,7 @@
               </section>              
 
 		
-		<section class="ftco-section" id="skills">
+		{% comment %} <section class="ftco-section" id="skills">
 			<div class="container">
 				<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
@@ -311,7 +318,7 @@
                   </div>
               </div>
               </div>
-              </section>              
+              </section>               {% endcomment %}
 
     <section class="ftco-section ftco-project" id="projects">
     	<div class="container">
@@ -351,7 +358,7 @@
                     <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                       <div class="block-18">
                         <div class="text">
-                          <strong class="number" data-number="5">0</strong>
+                          <strong class="number" data-number="6">0</strong>
                           <span>Completed Projects</span>
                         </div>
                       </div>
@@ -367,7 +374,7 @@
                     <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                       <div class="block-18">
                         <div class="text">
-                          <strong class="number" data-number="0">0</strong>
+                          <strong class="number" data-number="3">0</strong>
                           <span>Clients</span>
                         </div>
                       </div>
@@ -375,7 +382,7 @@
                     <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                       <div class="block-18">
                         <div class="text">
-                          <strong class="number" data-number="100">0</strong>
+                          <strong class="number" data-number="1000">0</strong>
                           <span>Cups of Coffee</span>
                         </div>
                       </div>
@@ -390,7 +397,7 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
-<p>If you're looking for a dedicated backend developer to collaborate on your project, or simply have any questions, feel free to reach out. I'm always open to discussing new ideas, potential opportunities, or how I can help bring your vision to life. Let's connect and create something amazing together!</p>
+<p>If you're looking for a dedicated web developer to collaborate on your project, or simply have any questions, feel free to reach out. I'm always open to discussing new ideas, potential opportunities, or how I can help bring your vision to life. Let's connect and create something amazing together!</p>
           </div>
         </div>
 
@@ -415,7 +422,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://1234567920">+2547 0326 3320</a></p>
+	            <p><a href="tel://1234567920">+254746345604</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -433,7 +440,6 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Website</h3>
-	            <p><a href="#">invincible20.pythonanywhere.com/</a></p>
 	          </div>
           </div>
         </div>
@@ -662,7 +668,7 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About</h2>
-              <p>Showcasing my journey in backend development through innovative projects.</p>
+              <p>Showcasing my journey in web development through innovative projects.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="https://x.com/Ignatius_xs?t=90nQgtMjz7AztJuZiKKegQ&s=09" target="_blank"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.instagram.com/ignatius_xs?igsh=OGR0bWEzN3plMTFz" target="_blank"><span class="icon-instagram"></span></a></li>
@@ -690,7 +696,7 @@
             	<h2 class="ftco-heading-2">Have any Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+254 703 263 320</span></a></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+254 746 434 5604</span></a></li>
 	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">ignatiusx47@gmail.com</span></a></li>
 	              </ul>
 	            </div>
